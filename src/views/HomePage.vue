@@ -2,6 +2,7 @@
 import { ref } from 'vue'
 import MainCards from '@/components/MainCards.vue'
 import MainPagination from '@/components/MainPagination.vue'
+
 const title = "Welcome to our page"
 </script>
 
