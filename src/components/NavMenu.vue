@@ -2,7 +2,7 @@
   import {ref} from 'vue'
   import { useAuth } from '@/composables/useAuth'
   const { isAuthenticated, logout, user } = useAuth()
-  const brand = ref('NationWide Car Rentals')
+  const brand = ref(import.meta.env.VITE_APP_NAME)
 </script>
 
 <template>
@@ -22,7 +22,7 @@
             </strong>
         </p>
         <div v-if="isAuthenticated">
-          <RouterLink :to="{ name: 'Settings' }" href="#" class="menu-item">Settings</RouterLink>
+          
           <button class="menu-logout" @click="logout">Logout</button>
         </div>
         <div v-else>
