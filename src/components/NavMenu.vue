@@ -2,7 +2,7 @@
   import {ref} from 'vue'
   import { useAuth } from '@/composables/useAuth'
   const { isAuthenticated, logout, user } = useAuth()
-  const brand = ref('Car Rental Company')
+  const brand = ref('NationWide Car Rentals')
 </script>
 
 <template>
@@ -17,9 +17,9 @@
           <a href="#" class="menu-item"><RouterLink to="/other">About Us</RouterLink></a>
           <p v-show="isAuthenticated" class="px-2 py-4">
           Welcome back
-          <strong
-            ><i>{{ user.name }}</i></strong
-          >
+          <strong>
+            <i>{{ user?.email }}</i>
+            </strong>
         </p>
         <div v-if="isAuthenticated">
           <RouterLink :to="{ name: 'Settings' }" href="#" class="menu-item">Settings</RouterLink>

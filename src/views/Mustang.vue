@@ -1,17 +1,17 @@
 <template>
     <div class="CarInfo">
-    <h1 class="text-6xl font-thin text-slate-900 justify-left">Subaru | BRZ</h1>
-        <h1 class="text-6xl font-thin text-slate-900 justify-left ">$700/Monthly Payments</h1>
+    <h1 class="text-6xl font-thin text-slate-900 justify-left">Ford | Mustang</h1>
+        <h1 class="text-6xl font-thin text-slate-900 justify-left ">$600/Monthly Payments</h1>
     </div>
     
-        <img class="image" src="https://static.foxnews.com/foxnews.com/content/uploads/2020/11/brz.jpg">
+        <img class="image" src="https://hips.hearstapps.com/hmg-prod/images/2024-ford-mustang-exterior-112-1663170333.jpg?crop=0.731xw:0.548xh;0.117xw,0.323xh&resize=1200:*">
 
         <button class="RentBtn">Rent This Car</button>
         
     
     <div class="About">
         <h1>About This Car:</h1>
-    <p>This is the perfect car to take to drive around to enjoy the day.</p>
+    <p>This is the Car that you can be proud driving.</p>
     </div>
     
         

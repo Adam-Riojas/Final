@@ -11,9 +11,9 @@
       <div class="card-details">
       <a class="card-details-name">Subaru</a>
       
-      <p class="card-details-job">BRZ</p>
+      <p class="card-details-model">BRZ</p>
       <p class="card-details-quote">$700/Month</p>
-      <Button class="Button" ><RouterLink to="/Subaru" >rent</RouterLink></Button>
+      <Button class="Button" ><RouterLink to="/Subaru" >Rent</RouterLink></Button>
     </div>
     </div>
   </template>
@@ -32,7 +32,7 @@
       &-name {
         @apply text-3xl font-thin  tracking-wider text-slate-800;
       }
-      &-job {
+      &-model {
         @apply -mt-2 text-xs font-bold text-red-500 text-2xl;
       }
       &-quote {
@@ -42,7 +42,7 @@
     }
   }
   .Button{
-    @apply text-2xl font-thin  tracking-wider text-slate-100 rounded-full bg-red-600 hover:bg-red-900;
+    @apply text-2xl font-thin  tracking-wider text-slate-100 rounded-full bg-red-600 hover:bg-red-900 shadow-2xl hover:shadow-slate-900;
   }
     
   
