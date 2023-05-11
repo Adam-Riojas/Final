@@ -1,7 +1,7 @@
 <script setup>
   import { ref } from 'vue'
-  const pages = ref(10)
-  const activePage = ref(4)
+  const pages = ref(2)
+  const activePage = ref(1)
   const prevPage = () => {
     if (activePage.value > 1) {
       activePage.value--
@@ -16,11 +16,11 @@
 
 <template>
   <div class="pagination">
-    <button class="action" :disabled="activePage === 1" @click="prevPage">Prev</button>
+    <button class="action" :disabled="activePage === 1" @click="prevPage"><RouterLink :to="{ name: 'Home'}" class="brand">Next</RouterLink></button>
     <button class="page" v-for="page in pages" :class="page === activePage ? 'active' : ''" @click="activePage = page">
       {{ page }}
     </button>
-    <button class="action" :disabled="activePage === pages" @click="nextPage">Next</button>
+    <button class="action" :disabled="activePage === pages" @click="nextPage"><RouterLink to="/other">Next</RouterLink></button>
   </div>
 </template>
 

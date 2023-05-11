@@ -1,6 +1,6 @@
 <template>
     <div class="CarInfo">
-    <h1 class="text-6xl font-thin text-slate-900 justify-left">Lincoln | Navigator</h1>
+    <h1 class="text-6xl font-bold text-slate-900 justify-left">Lincoln | Navigator</h1>
         <h1 class="text-6xl font-thin text-slate-900 justify-left ">$450/Monthly Payments</h1>
     </div>
     
@@ -24,7 +24,7 @@
     @apply rounded-lg bg-slate-100 tracking-wider font-bold text-center
   }
   .image{
-    @apply justify-center mx-auto rounded-md
+    @apply justify-center mx-auto rounded-md shadow-2xl
   }
   .RentBtn{
     @apply text-7xl font-thin  tracking-wide text-slate-900 rounded-md bg-green-600 scale-100 hover:bg-green-900 shadow-2xl hover:shadow-slate-100 text-right mx-auto hover:text-slate-100
